@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MSc Economics: scheme of studies (L1T109) — 2026/2027 Academic Year</title>
+<meta name="description" content="Modules, terms, credits, assessment and module leaders for MSc Economics at Durham University, 2026/2027 Academic Year.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* identity */
+  --palatinate:#68246D; --palatinate-deep:#3F1345; --palatinate-soft:#EDE3F0;
+  --plum:#8A2B60; --plum-soft:#F7E7EF;
+  --teal:#0C6560; --teal-soft:#DDEFED;
+  /* term colours - used only for term markers */
+  --t1:#8A5000; --t1-soft:#FBEFD9;
+  --t2:#1B4F8A; --t2-soft:#E2EDF8;
+  --t3:#2A6B3D; --t3-soft:#E1F0E5;
+  --t-split:#3A3340;
+  /* assessment - deliberately neutral, no overlap with term or type colours */
+  --a1:#413B47; --a2:#8F8797; --a-rail:#F3EEF5;
+  /* surfaces */
+  --ink:#241A28; --muted:#4E4253; --page:#FBF8FA; --card:#FFFFFF;
+  --line:#E3D8E7; --focus:#0C6560;
+  --shadow:0 2px 4px rgba(63,19,69,.05), 0 10px 30px rgba(63,19,69,.08);
+  --shadow-lift:0 4px 8px rgba(63,19,69,.07), 0 18px 44px rgba(63,19,69,.14);
+  --r-card:26px; --r-pill:999px; --r-lg:34px;
+  --ff:'Crimson Text',Georgia,'Times New Roman',serif;
+  --wrap:1180px;
+}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; padding-bottom:40px; background:var(--page); color:var(--ink);
+  font-family:var(--ff); font-size:1.28rem; line-height:1.62;
+}
+a{color:var(--palatinate); text-underline-offset:3px; text-decoration-thickness:1px}
+a:hover{text-decoration-thickness:2px}
+:focus-visible{outline:3px solid var(--focus); outline-offset:3px; border-radius:6px}
+.wrap{max-width:var(--wrap); margin:0 auto; padding:0 clamp(16px,4vw,32px)}
+.sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;
+  clip:rect(0 0 0 0);white-space:nowrap;border:0}
+
+.skip{position:absolute;left:-9999px;top:0;background:var(--palatinate);color:#fff;
+  padding:12px 22px;border-radius:0 0 var(--r-pill) var(--r-pill);z-index:200;font-weight:600}
+.skip:focus{left:24px}
+
+/* ---------- hero ---------- */
+.hero{position:relative; overflow:hidden; padding:clamp(38px,6vw,74px) 0 clamp(28px,4vw,46px)}
+.hero::before,.hero::after{content:"";position:absolute;border-radius:50%;filter:blur(46px);z-index:0;pointer-events:none}
+.hero::before{width:min(60vw,560px);aspect-ratio:1.25;background:radial-gradient(circle at 30% 30%,#E6D2EC,#F6EEF8 68%);
+  top:-18%;right:-12%;opacity:.85}
+.hero::after{width:min(44vw,380px);aspect-ratio:1.4;background:radial-gradient(circle at 60% 40%,#DCEFEC,#F3FAF8 70%);
+  bottom:-34%;left:-10%;opacity:.75}
+.hero .wrap{position:relative;z-index:1}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;background:var(--card);border:1px solid var(--line);
+  border-radius:var(--r-pill);padding:8px 20px;font-size:.9rem;letter-spacing:.1em;text-transform:uppercase;
+  font-weight:600;color:var(--palatinate);box-shadow:var(--shadow);margin:0}
+h1{font-weight:600;font-size:clamp(1.35rem,6.35vw,3.1rem);line-height:1.14;
+  letter-spacing:-.01em;margin:.5em 0 .62em;color:var(--palatinate-deep)}
+h1 .l1,h1 .l2{display:block}
+
+.hero-meta{display:flex;flex-wrap:wrap;align-items:stretch;gap:12px;margin-bottom:30px}
+.chip{display:inline-flex;align-items:center;gap:10px;background:var(--card);border:1px solid var(--line);
+  border-radius:var(--r-pill);padding:14px 26px;font-size:1.1rem;line-height:1.35;margin:0;
+  box-shadow:var(--shadow);color:var(--ink)}
+a.chip{text-decoration:none;color:var(--palatinate-deep);font-weight:600}
+a.chip:hover{border-color:var(--palatinate);box-shadow:var(--shadow-lift);text-decoration:underline}
+.chip .dot{width:10px;height:10px;border-radius:50%;background:var(--palatinate);flex:none;margin-top:.45em}
+.chip{align-items:center}
+.chip>span:last-child{min-width:0}
+.chip b{font-weight:600;color:var(--palatinate-deep)}
+
+.year{display:flex;flex-wrap:wrap;gap:14px;align-items:stretch}
+.year-oval{flex:1 1 180px;min-width:0;white-space:normal;font-family:var(--ff);font-size:1rem;
+  text-align:left;cursor:pointer;background:var(--card);border:1px solid var(--line);
+  border-radius:48px;padding:22px clamp(24px,3vw,32px);box-shadow:var(--shadow);color:var(--ink);
+  transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}
+.year-oval:hover{transform:translateY(-3px);box-shadow:var(--shadow-lift)}
+.year-oval .c{display:block;font-size:.88rem;text-transform:uppercase;letter-spacing:.1em;
+  font-weight:600;margin-bottom:3px}
+.year-oval .t{display:block;font-size:1.5rem;font-weight:600;line-height:1.15;color:var(--palatinate-deep)}
+.year-oval.o1{border-color:var(--t1)} .year-oval.o1 .c{color:var(--t1)}
+.year-oval.o2{border-color:var(--t2)} .year-oval.o2 .c{color:var(--t2)}
+.year-oval.o3{border-color:var(--t3)} .year-oval.o3 .c{color:var(--t3)}
+.year-oval.o1[aria-pressed="true"]{background:var(--t1);border-color:var(--t1)}
+.year-oval.o2[aria-pressed="true"]{background:var(--t2);border-color:var(--t2)}
+.year-oval.o3[aria-pressed="true"]{background:var(--t3);border-color:var(--t3)}
+.year-oval[aria-pressed="true"] .c{color:rgba(255,255,255,.88)}
+.year-oval[aria-pressed="true"] .t{color:#fff}
+.year-hint{font-size:1.05rem;color:var(--muted);margin:16px 0 0}
+
+/* ---------- toolbar ---------- */
+.toolbar{position:sticky;top:0;z-index:60;background:rgba(251,248,250,.9);
+  backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line);
+  padding:13px 0}
+.tools{display:flex;flex-wrap:wrap;gap:10px 14px;align-items:center}
+.fgroup{display:flex;flex-wrap:wrap;gap:6px;background:var(--card);border:1px solid var(--line);
+  border-radius:var(--r-pill);padding:5px}
+.fbtn{font-family:var(--ff);font-size:1.02rem;font-weight:600;border:0;background:transparent;color:var(--muted);
+  padding:8px 18px;border-radius:var(--r-pill);cursor:pointer;white-space:nowrap}
+.fbtn:hover{background:var(--palatinate-soft);color:var(--palatinate-deep)}
+.fbtn[aria-pressed="true"]{background:var(--palatinate);color:#fff}
+.fgroup.terms .fbtn[data-value="1"][aria-pressed="true"]{background:var(--t1)}
+.fgroup.terms .fbtn[data-value="2"][aria-pressed="true"]{background:var(--t2)}
+.fgroup.terms .fbtn[data-value="3"][aria-pressed="true"]{background:var(--t3)}
+.count{font-size:1.02rem;color:var(--muted)}
+
+/* ---------- sections ---------- */
+section{margin:clamp(36px,5.5vw,58px) 0}
+.shead{display:flex;flex-wrap:wrap;gap:14px;align-items:baseline;margin-bottom:10px}
+h2{font-size:clamp(1.7rem,3.6vw,2.4rem);font-weight:600;color:var(--palatinate-deep);
+  margin:0;letter-spacing:-.01em}
+.badge{display:inline-flex;align-items:center;background:var(--palatinate-soft);color:var(--palatinate-deep);
+  border-radius:var(--r-pill);padding:6px 18px;font-size:1rem;font-weight:600}
+.badge.t{background:var(--teal-soft);color:var(--teal)}
+.badge.p{background:var(--plum-soft);color:var(--plum)}
+.lead{color:var(--muted);max-width:70ch;margin:0 0 26px;font-size:1.18rem}
+.lead .key{font-weight:700;font-size:1.32rem;color:var(--palatinate-deep)}
+
+/* ---------- cards ---------- */
+.grid{list-style:none;padding:0;margin:0;display:grid;gap:18px;
+  grid-template-columns:repeat(auto-fill,minmax(min(340px,100%),1fr))}
+.card{min-width:0;position:relative;background:var(--card);border:1px solid var(--line);
+  border-radius:var(--r-card);padding:26px 28px 24px;box-shadow:var(--shadow);
+  display:flex;flex-direction:column;gap:15px;
+  transition:box-shadow .25s ease,transform .25s ease}
+.card:hover{box-shadow:var(--shadow-lift);transform:translateY(-3px)}
+.card::before{content:"";position:absolute;left:28px;right:28px;top:0;height:4px;
+  border-radius:0 0 var(--r-pill) var(--r-pill);background:var(--palatinate)}
+.card.opt::before{background:var(--teal)}
+.card.diss::before{background:var(--plum)}
+.card[hidden]{display:none}
+
+.ctop{min-width:0;display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+.code{display:inline-block;font-size:.92rem;letter-spacing:.11em;font-weight:600;color:var(--muted);
+  background:var(--page);border:1px solid var(--line);border-radius:var(--r-pill);
+  padding:5px 15px;white-space:nowrap;margin-bottom:9px}
+.credit{display:inline-flex;flex-direction:column;align-items:center;justify-content:center;
+  width:58px;height:58px;border-radius:50%;background:var(--palatinate-soft);color:var(--palatinate-deep);flex:none}
+.card.opt .credit{background:var(--teal-soft);color:var(--teal)}
+.card.diss .credit{background:var(--plum-soft);color:var(--plum)}
+.credit b{font-size:1.5rem;line-height:1;font-weight:700}
+.credit span{font-size:.66rem;text-transform:uppercase;letter-spacing:.09em;margin-top:2px;font-weight:600}
+.card h3,.card h4{margin:0;overflow-wrap:break-word;font-size:1.6rem;line-height:1.24;font-weight:600}
+.card h3 a,.card h4 a{color:var(--palatinate-deep);text-decoration:underline;text-decoration-color:rgba(104,36,109,.35)}
+.card h3 a:hover,.card h4 a:hover{text-decoration-color:var(--palatinate)}
+
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tag{display:inline-flex;align-items:center;font-size:.98rem;font-weight:600;border-radius:var(--r-pill);
+  padding:5px 16px;background:var(--page);border:1px solid var(--line);color:var(--muted)}
+.tag.core{background:var(--palatinate-soft);color:var(--palatinate-deep);border-color:transparent}
+.tag.optional{background:var(--teal-soft);color:var(--teal);border-color:transparent}
+.tag.t1{background:var(--t1-soft);color:var(--t1);border-color:transparent}
+.tag.t2{background:var(--t2-soft);color:var(--t2);border-color:transparent}
+.tag.t3{background:var(--t3-soft);color:var(--t3);border-color:transparent}
+.tag.t12{background:linear-gradient(100deg,var(--t1-soft) 0 50%,var(--t2-soft) 50% 100%);
+  color:var(--t-split);border-color:transparent}
+.tag.t23{background:linear-gradient(100deg,var(--t2-soft) 0 50%,var(--t3-soft) 50% 100%);
+  color:var(--t-split);border-color:transparent}
+
+.who{font-size:1.1rem;line-height:1.75;color:var(--muted);margin:0}
+.assess{border-top:1px solid var(--line);padding-top:15px;margin-top:auto}
+.abar{display:flex;gap:3px;height:14px;border-radius:var(--r-pill);overflow:hidden;
+  margin-bottom:12px;background:var(--a-rail)}
+.aseg{height:100%;border-radius:var(--r-pill);min-width:9px}
+.aseg.s1{background:var(--a1)} .aseg.s2{background:var(--a2)}
+.alist{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:7px}
+.alist li{display:flex;gap:14px;font-size:1.2rem;color:var(--ink);line-height:1.45}
+.alist .pc{font-weight:700;font-size:1.24rem;color:var(--palatinate-deep);flex:none;min-width:58px}
+
+/* ---------- notes ---------- */
+.notes{background:var(--card);border:1px solid var(--line);border-radius:var(--r-lg);
+  padding:clamp(24px,4vw,40px);box-shadow:var(--shadow)}
+.notes h2{font-size:clamp(1.5rem,3vw,1.95rem);margin-bottom:4px}
+.notelist{list-style:none;margin:20px 0 0;padding:0;display:flex;flex-direction:column;gap:18px}
+.notelist li{display:flex;gap:15px;align-items:flex-start;font-size:1.12rem;color:var(--muted);line-height:1.55}
+.notelist .mk{width:32px;height:32px;border-radius:50%;background:var(--palatinate-soft);
+  color:var(--palatinate-deep);display:flex;align-items:center;justify-content:center;flex:none;
+  font-size:1rem;font-weight:700;margin-top:2px}
+.timetable{margin-top:22px;background:var(--palatinate-soft);border:1.5px solid var(--palatinate);
+  border-radius:var(--r-lg);padding:clamp(22px,3.5vw,30px);box-shadow:var(--shadow);
+  display:flex;gap:16px;align-items:center}
+.timetable .mk{width:36px;height:36px;border-radius:50%;background:var(--palatinate);color:#fff;
+  display:flex;align-items:center;justify-content:center;flex:none;font-weight:700;margin-top:1px}
+.timetable p{margin:0;font-size:1.16rem;line-height:1.55;color:var(--palatinate-deep)}
+
+.empty{background:var(--card);border:1px dashed var(--line);border-radius:var(--r-lg);
+  padding:36px;text-align:center;color:var(--muted);font-size:1.12rem}
+.empty[hidden]{display:none}
+#main,section[data-sec],.grouphead,[data-group]{scroll-margin-top:96px}
+.grouphead{display:flex;flex-wrap:wrap;align-items:center;gap:14px 18px;margin:4px 0 18px}
+[data-group]+[data-group] .grouphead{margin-top:clamp(48px,6vw,74px)}
+.glabel{margin:0;display:inline-flex;align-items:center;background:var(--teal);color:#fff;
+  border-radius:var(--r-pill);padding:8px 24px;font-size:1.2rem;font-weight:700;letter-spacing:.01em}
+.gcap{margin:0;font-size:1.18rem;line-height:1.45;color:var(--teal);background:var(--teal-soft);
+  border-radius:30px;padding:10px 26px}
+.gcap .key{font-weight:700;font-size:1.32rem;color:var(--palatinate-deep)}
+[data-group][hidden]{display:none}
+.card.wide{grid-column:1/-1}
+.wide-inner{display:grid;grid-template-columns:minmax(300px,1fr) 1.35fr;gap:clamp(24px,3vw,40px);align-items:start}
+.wide-main{display:flex;flex-direction:column;gap:15px;height:100%}
+.wide-notes{background:var(--page);border:1px solid var(--line);border-radius:var(--r-card);
+  padding:clamp(20px,2.4vw,28px)}
+.wide-notes ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:16px}
+.wide-notes li{display:flex;gap:14px;align-items:flex-start;font-size:1.1rem;line-height:1.5;color:var(--muted)}
+.wide-notes .mk{width:30px;height:30px;border-radius:50%;background:var(--teal-soft);color:var(--teal);
+  display:flex;align-items:center;justify-content:center;flex:none;font-size:1.05rem;font-weight:700;margin-top:1px}
+@media (max-width:860px){ .wide-inner{grid-template-columns:1fr} }
+
+@media (max-width:400px){
+  .card h3,.card h4{font-size:1.36rem}
+  .credit{width:52px;height:52px}
+  .credit b{font-size:1.32rem}
+  .card{padding:22px 22px 20px}
+  .card::before{left:22px;right:22px}
+}
+@media (max-width:640px){
+  body{font-size:1.2rem}
+  .grid{grid-template-columns:minmax(0,1fr)}
+  .fbtn{padding:8px 14px;font-size:.98rem}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation-duration:.01ms!important;animation-iteration-count:1!important;
+    transition-duration:.01ms!important;scroll-behavior:auto!important}
+  .card:hover,.year-oval:hover{transform:none}
+}
+@media print{
+  body{background:#fff}
+  .toolbar,.skip,.hero::before,.hero::after,.year-hint,.year{display:none!important}
+  .card{break-inside:avoid;box-shadow:none;border:1px solid #bbb}
+  .card[hidden]{display:flex!important}
+  a{color:#000}
+  .card h3 a::after,.card h4 a::after{content:" (" attr(href) ")";font-size:.62rem;font-family:monospace;word-break:break-all}
+  .grid{grid-template-columns:1fr 1fr}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to the modules</a>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Department of Economics · 2026/2027 Academic Year</p>
+    <h1><span class="l1">MSc Economics:</span><span class="l2">scheme of studies</span></h1>
+    <div class="hero-meta">
+      <a class="chip" href="https://apps.dur.ac.uk/faculty.handbook/2026/PG/programme/L1T109" target="_blank" rel="noopener noreferrer"><span class="dot" aria-hidden="true"></span><span>Programme Handbook for L1T109<span class="sr"> (opens in a new tab)</span></span></a>
+      <p class="chip"><span class="dot" aria-hidden="true"></span><span>Programme Director: <a href="https://www.durham.ac.uk/business/our-people/vsevolod-ostapenko/" target="_blank" rel="noopener noreferrer"><b>Dr Vsevolod Ostapenko</b><span class="sr"> (opens in a new tab)</span></a></span></p>
+    </div>
+    <h2 class="sr">The shape of your year</h2>
+    <div class="year">
+      <button class="fbtn year-oval o1" type="button" data-filter="term" data-value="1" data-scroll="1" aria-pressed="false">
+        <span class="c">Michaelmas</span><span class="t">Term 1</span></button>
+      <button class="fbtn year-oval o2" type="button" data-filter="term" data-value="2" data-scroll="1" aria-pressed="false">
+        <span class="c">Epiphany</span><span class="t">Term 2</span></button>
+      <button class="fbtn year-oval o3" type="button" data-filter="term" data-value="3" data-scroll="1" aria-pressed="false">
+        <span class="c">Easter and summer</span><span class="t">Term 3</span></button>
+    </div>
+    <p class="year-hint">Select a term to filter the modules below, or browse everything.</p>
+  </div>
+</header>
+
+<div class="toolbar">
+  <div class="wrap">
+    <div class="tools">
+      <div class="fgroup terms" role="group" aria-label="Filter by term">
+        <button class="fbtn" type="button" data-filter="term" data-value="all" aria-pressed="true">All terms</button>
+        <button class="fbtn" type="button" data-filter="term" data-value="1" aria-pressed="false">Term 1</button>
+        <button class="fbtn" type="button" data-filter="term" data-value="2" aria-pressed="false">Term 2</button>
+        <button class="fbtn" type="button" data-filter="term" data-value="3" aria-pressed="false">Term 3</button>
+      </div>
+      <div class="fgroup" role="group" aria-label="Filter by module type">
+        <button class="fbtn" type="button" data-filter="type" data-value="all" aria-pressed="true">All modules</button>
+        <button class="fbtn" type="button" data-filter="type" data-value="Core" aria-pressed="false">Core</button>
+        <button class="fbtn" type="button" data-filter="type" data-value="Optional" aria-pressed="false">Optional</button>
+      </div>
+      <span class="count" id="count"></span>
+    </div>
+  </div>
+</div>
+
+<p class="sr" id="live" role="status" aria-live="polite"></p>
+
+<main id="main" class="wrap">
+
+  <section data-sec>
+    <div class="shead"><h2>Core modules</h2><span class="badge">45 credits</span></div>
+    <p class="lead">These are your <span class="key">core modules</span>:</p>
+    <div data-group>
+      <ul class="grid">
+        <li class="card" data-type="Core" data-terms="1">
+  <div class="ctop">
+    <div>
+      <span class="code">ECON44815</span>
+      <h3><a href="https://apps.dur.ac.uk/faculty.handbook/2026/PG/module/ECON44815" target="_blank" rel="noopener noreferrer">Advanced Macroeconomics<span class="sr"> (opens in a new tab)</span></a></h3>
+    </div>
+    <span class="credit" aria-hidden="true"><b>15</b><span>credits</span></span>
+  </div>
+  <p class="sr">15 credits.</p>
+  <div class="tags">
+    <span class="tag core">Core</span>
+    <span class="tag t1">Term 1</span>
+  </div>
+  <p class="who">Module leader: <a href="https://www.durham.ac.uk/business/our-people/parantap-basu/" target="_blank" rel="noopener noreferrer">Parantap Basu<span class="sr"> (opens in a new tab)</span></a></p>
+  <div class="assess"><div class="abar" aria-hidden="true"><span class="aseg s1" style="flex:30"></span><span class="aseg s2" style="flex:70"></span></div><p class="sr">Assessment</p><ul class="alist"><li><span class="pc">30%</span><span>1000 word project</span></li><li><span class="pc">70%</span><span>2 hour in-person written examination</span></li></ul></div>
+</li><li class="card" data-type="Core" data-terms="1">
+  <div class="ctop">
+    <div>
+      <span class="code">ECON44715</span>
+      <h3><a href="https://apps.dur.ac.uk/faculty.handbook/2026/PG/module/ECON44715" target="_blank" rel="noopener noreferrer">Advanced Microeconomics<span class="sr"> (opens in a new tab)</span></a></h3>
+    </div>
+    <span class="credit" aria-hidden="true"><b>15</b><span>credits</span></span>
+  </div>
+  <p class="sr">15 credits.</p>
+  <div class="tags">
+    <span class="tag core">Core</span>
+    <span class="tag t1">Term 1</span>
+  </div>
+  <p class="who">Module leader: <a href="https://www.durham.ac.uk/business/our-people/b-c-saha/" target="_blank" rel="noopener noreferrer">Bibhas Saha<span class="sr"> (opens in a new tab)</span></a></p>
+  <div class="assess"><div class="abar" aria-hidden="true"><span class="aseg s1" style="flex:100"></span></div><p class="sr">Assessment</p><ul class="alist"><li><span class="pc">100%</span><span>2 hour in-person written examination</span></li></ul></div>
+</li><li class="card" data-type="Core" data-terms="1">
+  <div class="ctop">
+    <div>
+      <span class="code">ECON41515</span>
+      <h3><a href="https://apps.dur.ac.uk/faculty.handbook/2026/PG/module/ECON41515" target="_blank" rel="noopener noreferrer">Econometric Analysis<span class="sr"> (opens in a new tab)</span></a></h3>
+    </div>
+    <span class="credit" aria-hidden="true"><b>15</b><span>credits</span></span>
+  </div>
+  <p class="sr">15 credits.</p>
+  <div class="tags">
+    <span class="tag core">Core</span>
+    <span class="tag t1">Term 1</span>
+  </div>
+  <p class="who">Module leader: <a href="https://www.durham.ac.uk/business/our-people/xing-wang/" target="_blank" rel="noopener noreferrer">Xing Wang<span class="sr"> (opens in a new tab)</span></a></p>
+  <div class="assess"><div class="abar" aria-hidden="true"><span class="aseg s1" style="flex:25"></span><span class="aseg s2" style="flex:75"></span></div><p class="sr">Assessment</p><ul class="alist"><li><span class="pc">25%</span><span>1000 word project</span></li><li><span class="pc">75%</span><span>2 hour in-person written examination</span></li></ul></div>
+</li>
+      </ul>
+    </div>
+  </section>
+
+  <section data-sec>
+    <div class="shead"><h2>Your dissertation</h2><span class="badge p">Core · 60 credits</span></div>
+    <p class="lead">You will be registered for one of the following dissertation modules (initially this will always be ECON47060 but you can choose to apply for ECON48060)</p>
+    <div data-group>
+      <div class="grouphead"><h3 class="glabel">List A</h3></div>
+      <ul class="grid">
+        <li class="card diss" data-type="Core" data-terms="2,3">
+  <div class="ctop">
+    <div>
+      <span class="code">ECON47060</span>
+      <h3><a href="https://apps.dur.ac.uk/faculty.handbook/2026/PG/module/ECON47060" target="_blank" rel="noopener noreferrer">Dissertation (MSc Economics)<span class="sr"> (opens in a new tab)</span></a></h3>
+    </div>
+    <span class="credit" aria-hidden="true"><b>60</b><span>credits</span></span>
+  </div>
+  <p class="sr">60 credits.</p>
+  <div class="tags">
+    <span class="tag core">Core</span>
+    <span class="tag t23">Term 2 &amp; 3</span>
+  </div>
+  <p class="who">Module leader: <a href="https://www.durham.ac.uk/business/our-people/nourin-shabnam/" target="_blank" rel="noopener noreferrer">Nourin Shabnam<span class="sr"> (opens in a new tab)</span></a></p>
+  <div class="assess"><div class="abar" aria-hidden="true"><span class="aseg s1" style="flex:25"></span><span class="aseg s2" style="flex:75"></span></div><p class="sr">Assessment</p><ul class="alist"><li><span class="pc">25%</span><span>1500 word research proposal</span></li><li><span class="pc">75%</span><span>12000 word dissertation</span></li></ul></div>
+</li><li class="card diss" data-type="Core" data-terms="2,3">
+  <div class="ctop">
+    <div>
+      <span class="code">ECON48060</span>
+      <h3><a href="https://apps.dur.ac.uk/faculty.handbook/2026/PG/module/ECON48060" target="_blank" rel="noopener noreferrer">Dissertation (International) (MSc Economics)<span class="sr"> (opens in a new tab)</span></a></h3>
+    </div>
+    <span class="credit" aria-hidden="true"><b>60</b><span>credits</span></span>
+  </div>
+  <p class="sr">60 credits.</p>
+  <div class="tags">
+    <span class="tag core">Core</span>
+    <span class="tag t23">Term 2 &amp; 3</span>
+  </div>
+  <p class="who">Module leader: <a href="https://www.durham.ac.uk/business/our-people/nourin-shabnam/" target="_blank" rel="noopener noreferrer">Nourin Shabnam<span class="sr"> (opens in a new tab)</span></a> / International team</p>
+  <div class="assess"><div class="abar" aria-hidden="true"><span class="aseg s1" style="flex:25"></span><span class="aseg s2" style="flex:75"></span></div><p class="sr">Assessment</p><ul class="alist"><li><span class="pc">25%</span><span>1500 word research proposal</span></li><li><span class="pc">75%</span><span>12000 word dissertation</span></li></ul></div>
+</li>
+      </ul>
+    </div>
+  </section>
+
+  <section data-sec>
+    <div class="shead"><h2>Optional modules</h2><span class="badge t">Choose five</span></div>
+    <p class="lead">You must choose <span class="key">five</span> of the following optional modules (included in lists B and C)</p>
+    <div data-group>
+    <div class="grouphead"><h3 class="glabel">List B</h3></div>
+    <ul class="grid">
+      <li class="card opt" data-type="Optional" data-terms="1">
+  <div class="ctop">
+    <div>
+      <span class="code">ECON41G15</span>
+      <h4><a href="https://apps.dur.ac.uk/faculty.handbook/2026/PG/module/ECON41G15" target="_blank" rel="noopener noreferrer">Data Analytics<span class="sr"> (opens in a new tab)</span></a></h4>
+    </div>
+    <span class="credit" aria-hidden="true"><b>15</b><span>credits</span></span>
+  </div>
+  <p class="sr">15 credits.</p>
+  <div class="tags">
+    <span class="tag optional">Optional</span>
+    <span class="tag t1">Term 1</span>
+  </div>
+  <p class="who">Module leader: <a href="https://www.durham.ac.uk/business/our-people/anastasiia-parakhoniak/" target="_blank" rel="noopener noreferrer">Anastasiia Parakhoniak<span class="sr"> (opens in a new tab)</span></a></p>
+  <div class="assess"><div class="abar" aria-hidden="true"><span class="aseg s1" style="flex:40"></span><span class="aseg s2" style="flex:60"></span></div><p class="sr">Assessment</p><ul class="alist"><li><span class="pc">40%</span><span>3000 word written group project</span></li><li><span class="pc">60%</span><span>individual homework coding assignments</span></li></ul></div>
+</li><li class="card opt" data-type="Optional" data-terms="1">
+  <div class="ctop">
+    <div>
+      <span class="code">ECON40615</span>
+      <h4><a href="https://apps.dur.ac.uk/faculty.handbook/2026/PG/module/ECON40615" target="_blank" rel="noopener noreferrer">Environmental and Climate Economics<span class="sr"> (opens in a new tab)</span></a></h4>
+    </div>
+    <span class="credit" aria-hidden="true"><b>15</b><span>credits</span></span>
+  </div>
+  <p class="sr">15 credits.</p>
+  <div class="tags">
+    <span class="tag optional">Optional</span>
+    <span class="tag t1">Term 1</span>
+  </div>
+  <p class="who">Module leader: <a href="https://www.durham.ac.uk/business/our-people/alejandro-caparros/" target="_blank" rel="noopener noreferrer">Alejandro Caparros<span class="sr"> (opens in a new tab)</span></a></p>
+  <div class="assess"><div class="abar" aria-hidden="true"><span class="aseg s1" style="flex:40"></span><span class="aseg s2" style="flex:60"></span></div><p class="sr">Assessment</p><ul class="alist"><li><span class="pc">40%</span><span>individual presentation</span></li><li><span class="pc">60%</span><span>2 hour in-person written examination</span></li></ul></div>
+</li><li class="card opt" data-type="Optional" data-terms="2">
+  <div class="ctop">
+    <div>
+      <span class="code">ECON42515</span>
+      <h4><a href="https://apps.dur.ac.uk/faculty.handbook/2026/PG/module/ECON42515" target="_blank" rel="noopener noreferrer">Behavioural Economics<span class="sr"> (opens in a new tab)</span></a></h4>
+    </div>
+    <span class="credit" aria-hidden="true"><b>15</b><span>credits</span></span>
+  </div>
+  <p class="sr">15 credits.</p>
+  <div class="tags">
+    <span class="tag optional">Optional</span>
+    <span class="tag t2">Term 2</span>
+  </div>
+  <p class="who">Module leader: <a href="https://www.durham.ac.uk/business/our-people/andis-sofianos/" target="_blank" rel="noopener noreferrer">Andis Sofianos<span class="sr"> (opens in a new tab)</span></a></p>
+  <div class="assess"><div class="abar" aria-hidden="true"><span class="aseg s1" style="flex:40"></span><span class="aseg s2" style="flex:60"></span></div><p class="sr">Assessment</p><ul class="alist"><li><span class="pc">40%</span><span>750 word assignment</span></li><li><span class="pc">60%</span><span>1500 word assignment</span></li></ul></div>
+</li><li class="card opt" data-type="Optional" data-terms="2">
+  <div class="ctop">
+    <div>
+      <span class="code">ECON44415</span>
+      <h4><a href="https://apps.dur.ac.uk/faculty.handbook/2026/PG/module/ECON44415" target="_blank" rel="noopener noreferrer">Development Economics<span class="sr"> (opens in a new tab)</span></a></h4>
+    </div>
+    <span class="credit" aria-hidden="true"><b>15</b><span>credits</span></span>
+  </div>
+  <p class="sr">15 credits.</p>
+  <div class="tags">
+    <span class="tag optional">Optional</span>
+    <span class="tag t2">Term 2</span>
+  </div>
+  <p class="who">Module leader: <a href="https://www.durham.ac.uk/business/our-people/habib-rahman/" target="_blank" rel="noopener noreferrer">Habib Rahman<span class="sr"> (opens in a new tab)</span></a></p>
+  <div class="assess"><div class="abar" aria-hidden="true"><span class="aseg s1" style="flex:25"></span><span class="aseg s2" style="flex:75"></span></div><p class="sr">Assessment</p><ul class="alist"><li><span class="pc">25%</span><span>750 word assignment</span></li><li><span class="pc">75%</span><span>2 hour in-person written examination</span></li></ul></div>
+</li><li class="card opt" data-type="Optional" data-terms="2">
+  <div class="ctop">
+    <div>
+      <span class="code">ECON43415</span>
+      <h4><a href="https://apps.dur.ac.uk/faculty.handbook/2026/PG/module/ECON43415" target="_blank" rel="noopener noreferrer">Experimental Economics<span class="sr"> (opens in a new tab)</span></a></h4>
+    </div>
+    <span class="credit" aria-hidden="true"><b>15</b><span>credits</span></span>
+  </div>
+  <p class="sr">15 credits.</p>
+  <div class="tags">
+    <span class="tag optional">Optional</span>
+    <span class="tag t2">Term 2</span>
+  </div>
+  <p class="who">Module leader: <a href="https://www.durham.ac.uk/business/our-people/aleksei-chernulich/" target="_blank" rel="noopener noreferrer">Aleksei Chernulich<span class="sr"> (opens in a new tab)</span></a></p>
+  <div class="assess"><div class="abar" aria-hidden="true"><span class="aseg s1" style="flex:100"></span></div><p class="sr">Assessment</p><ul class="alist"><li><span class="pc">100%</span><span>3000 word assignment</span></li></ul></div>
+</li><li class="card opt" data-type="Optional" data-terms="2">
+  <div class="ctop">
+    <div>
+      <span class="code">ECON44115</span>
+      <h4><a href="https://apps.dur.ac.uk/faculty.handbook/2026/PG/module/ECON44115" target="_blank" rel="noopener noreferrer">Game Theory<span class="sr"> (opens in a new tab)</span></a></h4>
+    </div>
+    <span class="credit" aria-hidden="true"><b>15</b><span>credits</span></span>
+  </div>
+  <p class="sr">15 credits.</p>
+  <div class="tags">
+    <span class="tag optional">Optional</span>
+    <span class="tag t2">Term 2</span>
+  </div>
+  <p class="who">Module leader: <a href="https://www.durham.ac.uk/business/our-people/nejat-anbarci/" target="_blank" rel="noopener noreferrer">Nejat Anbarci<span class="sr"> (opens in a new tab)</span></a></p>
+  <div class="assess"><div class="abar" aria-hidden="true"><span class="aseg s1" style="flex:100"></span></div><p class="sr">Assessment</p><ul class="alist"><li><span class="pc">100%</span><span>2 hour in-person written examination</span></li></ul></div>
+</li><li class="card opt" data-type="Optional" data-terms="2">
+  <div class="ctop">
+    <div>
+      <span class="code">ECON41H15</span>
+      <h4><a href="https://apps.dur.ac.uk/faculty.handbook/2026/PG/module/ECON41H15" target="_blank" rel="noopener noreferrer">Machine Learning<span class="sr"> (opens in a new tab)</span></a></h4>
+    </div>
+    <span class="credit" aria-hidden="true"><b>15</b><span>credits</span></span>
+  </div>
+  <p class="sr">15 credits.</p>
+  <div class="tags">
+    <span class="tag optional">Optional</span>
+    <span class="tag t2">Term 2</span>
+  </div>
+  <p class="who">Module leader: <a href="https://www.durham.ac.uk/business/our-people/majid-al-sadoon/" target="_blank" rel="noopener noreferrer">Majid Al Sadoon<span class="sr"> (opens in a new tab)</span></a></p>
+  <div class="assess"><div class="abar" aria-hidden="true"><span class="aseg s1" style="flex:40"></span><span class="aseg s2" style="flex:60"></span></div><p class="sr">Assessment</p><ul class="alist"><li><span class="pc">40%</span><span>4500 word written group project</span></li><li><span class="pc">60%</span><span>2 hour in-person written examination</span></li></ul></div>
+</li><li class="card opt" data-type="Optional" data-terms="2">
+  <div class="ctop">
+    <div>
+      <span class="code">ECON47715</span>
+      <h4><a href="https://apps.dur.ac.uk/faculty.handbook/2026/PG/module/ECON47715" target="_blank" rel="noopener noreferrer">Microeconometrics<span class="sr"> (opens in a new tab)</span></a></h4>
+    </div>
+    <span class="credit" aria-hidden="true"><b>15</b><span>credits</span></span>
+  </div>
+  <p class="sr">15 credits.</p>
+  <div class="tags">
+    <span class="tag optional">Optional</span>
+    <span class="tag t2">Term 2</span>
+  </div>
+  <p class="who">Module leader: <a href="https://www.durham.ac.uk/business/our-people/hugo-kruiniger/" target="_blank" rel="noopener noreferrer">Hugo Kruiniger<span class="sr"> (opens in a new tab)</span></a></p>
+  <div class="assess"><div class="abar" aria-hidden="true"><span class="aseg s1" style="flex:100"></span></div><p class="sr">Assessment</p><ul class="alist"><li><span class="pc">100%</span><span>3000 word project</span></li></ul></div>
+</li><li class="card opt" data-type="Optional" data-terms="2">
+  <div class="ctop">
+    <div>
+      <span class="code">ECON42015</span>
+      <h4><a href="https://apps.dur.ac.uk/faculty.handbook/2026/PG/module/ECON42015" target="_blank" rel="noopener noreferrer">Money and Banking<span class="sr"> (opens in a new tab)</span></a></h4>
+    </div>
+    <span class="credit" aria-hidden="true"><b>15</b><span>credits</span></span>
+  </div>
+  <p class="sr">15 credits.</p>
+  <div class="tags">
+    <span class="tag optional">Optional</span>
+    <span class="tag t2">Term 2</span>
+  </div>
+  <p class="who">Module leader: <a href="https://www.durham.ac.uk/business/our-people/tatiana-damjanovic/" target="_blank" rel="noopener noreferrer">Tatiana Damjanovic<span class="sr"> (opens in a new tab)</span></a></p>
+  <div class="assess"><div class="abar" aria-hidden="true"><span class="aseg s1" style="flex:100"></span></div><p class="sr">Assessment</p><ul class="alist"><li><span class="pc">100%</span><span>2 hour in-person written examination</span></li></ul></div>
+</li><li class="card opt" data-type="Optional" data-terms="2">
+  <div class="ctop">
+    <div>
+      <span class="code">ECON44615</span>
+      <h4><a href="https://apps.dur.ac.uk/faculty.handbook/2026/PG/module/ECON44615" target="_blank" rel="noopener noreferrer">Natural Resource Economics<span class="sr"> (opens in a new tab)</span></a></h4>
+    </div>
+    <span class="credit" aria-hidden="true"><b>15</b><span>credits</span></span>
+  </div>
+  <p class="sr">15 credits.</p>
+  <div class="tags">
+    <span class="tag optional">Optional</span>
+    <span class="tag t2">Term 2</span>
+  </div>
+  <p class="who">Module leader: <a href="https://www.durham.ac.uk/business/our-people/lucia-sbragia/" target="_blank" rel="noopener noreferrer">Lucia Sbragia<span class="sr"> (opens in a new tab)</span></a></p>
+  <div class="assess"><div class="abar" aria-hidden="true"><span class="aseg s1" style="flex:100"></span></div><p class="sr">Assessment</p><ul class="alist"><li><span class="pc">100%</span><span>2 hour in-person written examination</span></li></ul></div>
+</li><li class="card opt" data-type="Optional" data-terms="2">
+  <div class="ctop">
+    <div>
+      <span class="code">ECON41615</span>
+      <h4><a href="https://apps.dur.ac.uk/faculty.handbook/2026/PG/module/ECON41615" target="_blank" rel="noopener noreferrer">Time Series Analysis<span class="sr"> (opens in a new tab)</span></a></h4>
+    </div>
+    <span class="credit" aria-hidden="true"><b>15</b><span>credits</span></span>
+  </div>
+  <p class="sr">15 credits.</p>
+  <div class="tags">
+    <span class="tag optional">Optional</span>
+    <span class="tag t2">Term 2</span>
+  </div>
+  <p class="who">Module leader: <a href="https://www.durham.ac.uk/business/our-people/majid-al-sadoon/" target="_blank" rel="noopener noreferrer">Majid Al Sadoon<span class="sr"> (opens in a new tab)</span></a></p>
+  <div class="assess"><div class="abar" aria-hidden="true"><span class="aseg s1" style="flex:50"></span><span class="aseg s2" style="flex:50"></span></div><p class="sr">Assessment</p><ul class="alist"><li><span class="pc">50%</span><span>1250 word project</span></li><li><span class="pc">50%</span><span>2 hour in-person written examination</span></li></ul></div>
+</li>
+    </ul>
+  </div><div data-group>
+    <div class="grouphead"><h3 class="glabel">List C</h3><p class="gcap">from this list, you can choose <span class="key">maximum one module</span></p></div>
+    <ul class="grid">
+      <li class="card opt" data-type="Optional" data-terms="2">
+  <div class="ctop">
+    <div>
+      <span class="code">FINN43415</span>
+      <h4><a href="https://apps.dur.ac.uk/faculty.handbook/2026/PG/module/FINN43415" target="_blank" rel="noopener noreferrer">Capital Market Development<span class="sr"> (opens in a new tab)</span></a></h4>
+    </div>
+    <span class="credit" aria-hidden="true"><b>15</b><span>credits</span></span>
+  </div>
+  <p class="sr">15 credits.</p>
+  <div class="tags">
+    <span class="tag optional">Optional</span>
+    <span class="tag t2">Term 2</span>
+  </div>
+  <p class="who">The module is taught by the Department of Finance</p>
+  <div class="assess"><div class="abar" aria-hidden="true"><span class="aseg s1" style="flex:100"></span></div><p class="sr">Assessment</p><ul class="alist"><li><span class="pc">100%</span><span>2500 word assignment</span></li></ul></div>
+</li><li class="card opt" data-type="Optional" data-terms="2">
+  <div class="ctop">
+    <div>
+      <span class="code">FINN40815</span>
+      <h4><a href="https://apps.dur.ac.uk/faculty.handbook/2026/PG/module/FINN40815" target="_blank" rel="noopener noreferrer">Market Microstructure<span class="sr"> (opens in a new tab)</span></a></h4>
+    </div>
+    <span class="credit" aria-hidden="true"><b>15</b><span>credits</span></span>
+  </div>
+  <p class="sr">15 credits.</p>
+  <div class="tags">
+    <span class="tag optional">Optional</span>
+    <span class="tag t2">Term 2</span>
+  </div>
+  <p class="who">The module is taught by the Department of Finance</p>
+  <div class="assess"><div class="abar" aria-hidden="true"><span class="aseg s1" style="flex:100"></span></div><p class="sr">Assessment</p><ul class="alist"><li><span class="pc">100%</span><span>2500 word assignment</span></li></ul></div>
+</li><li class="card opt wide" data-type="Optional" data-terms="1,2">
+  <div class="wide-inner"><div class="wide-main"><div class="ctop">
+    <div>
+      <span class="code">CFLSXXXX</span>
+      <h4><a href="https://www.durham.ac.uk/departments/centres/foreign-language-study/credit-bearing-modules-in-foreign-languages/" target="_blank" rel="noopener noreferrer">*A Language module by the Centre for Foreign Language Study<span class="sr"> (opens in a new tab)</span></a></h4>
+    </div>
+    <span class="credit" aria-hidden="true"><b>20</b><span>credits</span></span>
+  </div>
+  <p class="sr">20 credits.</p>
+  <div class="tags">
+    <span class="tag optional">Optional</span>
+    <span class="tag t12">Term 1 &amp; 2</span>
+  </div>
+  <p class="who">Taught by the Centre for Foreign Language Study</p>
+  <div class="assess"><p class="sr">Assessment</p><ul class="alist"><li><span class="pc">—</span><span>Various</span></li></ul></div></div><div class="wide-notes">
+      <ul>
+        <li><span class="mk" aria-hidden="true">*</span>
+          <span>If you are selecting a language as an elective module you should choose a language
+          module delivered by the Centre for Foreign Language Study, prefixed by CFLSXXXX.</span></li>
+        <li><span class="mk" aria-hidden="true">*</span>
+          <span><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=i9hQcmhLKUW-RNWaLYpvlAHlKt_4HPBNlQUEE6PvNhlUNEk5MzFRTDVQSFZFVkFCTlA2NERTOVdUMC4u&amp;wdLOR=c736DEDC9-F9CD-46F2-99B4-1C2956851EE9" target="_blank" rel="noopener noreferrer">Students must also submit a CFLS Language Declaration form to confirm eligibility for the selected module before a module choice can be approved.<span class="sr"> (opens in a new tab)</span></a></span></li>
+        <li><span class="mk" aria-hidden="true">*</span>
+          <span>If in doubt about your language level please refer to
+          <a href="mailto:cfls.admin@durham.ac.uk">cfls.admin@durham.ac.uk</a> or
+          <a href="https://www.durham.ac.uk/departments/centres/foreign-language-study/credit-bearing-modules-in-foreign-languages/" target="_blank" rel="noopener noreferrer">click here<span class="sr"> (opens in a new tab)</span></a>.</span></li>
+      </ul>
+    </div></div>
+</li>
+    </ul>
+  </div>
+  </section>
+
+  <div class="empty" id="empty" hidden>
+    <p><strong>No modules match these filters.</strong><br>Choose “All terms” and “All modules” to see everything again.</p>
+  </div>
+
+  <div class="timetable">
+    <span class="mk" aria-hidden="true">!</span>
+    <p>Students should always check their module timetable using <a href="https://mytimetable.durham.ac.uk/" target="_blank" rel="noopener noreferrer">My Timetable<span class="sr"> (opens in a new tab)</span></a>.</p>
+  </div>
+</main>
+
+<script>
+(function(){
+  var q=function(s,r){return (r||document).querySelector(s)};
+  var qa=function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))};
+  var cards=qa('.card');
+  var state={term:'all',type:'all'};
+  var live=q('#live'), countEl=q('#count'), empty=q('#empty');
+
+  function matches(c){
+    if(state.type!=='all' && c.dataset.type!==state.type) return false;
+    if(state.term!=='all' && c.dataset.terms.split(',').indexOf(state.term)<0) return false;
+    return true;
+  }
+  function apply(announce){
+    var n=0;
+    cards.forEach(function(c){var m=matches(c); c.hidden=!m; if(m)n++;});
+    qa('[data-group]').forEach(function(g){
+      g.hidden = qa('.card',g).filter(function(c){return !c.hidden}).length===0;
+    });
+    qa('section[data-sec]').forEach(function(s){
+      s.hidden = qa('.card',s).filter(function(c){return !c.hidden}).length===0;
+    });
+    countEl.textContent = n+(n===1?' module':' modules')+' shown';
+    empty.hidden = n>0;
+    if(announce) live.textContent = n===0 ? 'No modules match these filters.'
+      : n+(n===1?' module':' modules')+' shown.';
+  }
+  qa('.fbtn').forEach(function(b){
+    b.addEventListener('click',function(){
+      var k=b.dataset.filter, v=b.dataset.value;
+      state[k]= (state[k]===v && v!=='all') ? 'all' : v;
+      qa('.fbtn[data-filter="'+k+'"]').forEach(function(o){
+        o.setAttribute('aria-pressed', String(o.dataset.value===state[k]));
+      });
+      apply(true);
+      if(b.dataset.scroll) q('#main').scrollIntoView({behavior:'smooth',block:'start'});
+    });
+  });
+  apply(false);
+})();
+</script>
+</body>
+</html>
